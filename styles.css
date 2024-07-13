@@ -1,0 +1,237 @@
+body {
+    background-color: ;
+    color: #333; /* Default text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #B6DBEB;
+    border-bottom: 2px solid #ff5722;
+    padding: 10px 20px;
+}
+.navbar-brand img {
+    max-height: 50px;
+}
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff5722;
+}
+.navbar-toggler {
+    border-color: #ff5722; /* Toggler button border color */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2871, 71, 71, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    background-color: #f8f9fa;
+}
+
+/* Footer Styling */
+footer {
+    padding: 10px;
+    color: #ff5722;
+    text-align: center;
+}
+
+/* Video Banner Section */
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 74vh;
+    overflow: hidden;
+}
+.video-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 0;
+}
+.video-banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.video-banner .content {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Change text color to white to stand out against the dark overlay */
+    z-index: 1;
+}
+.video-banner .content2 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Change text color to white to stand out against the dark overlay */
+    z-index: 1;
+}
+.video-banner .content h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+.video-banner .content2 p {
+    font-size: 1.2em;
+}
+.video-banner .arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.video-banner .arrow-down a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.video-banner .arrow-down a:hover {
+    background-color: #ff5722;
+    color: white;
+}
+
+/* About Japan Section */
+#about-japan {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin-top: -20px; /* Adjust if needed to better fit with the video banner */
+}
+#about-japan h2 {
+    font-size: 2.5em;
+    color: #ff5722;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#about-japan p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Japanese Culture and Lifestyle Section */
+#japanese-culture {
+    background-color: #EC464A;
+    padding: 50px 20px;
+}
+#japanese-culture h2 {
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#japanese-culture .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+#japanese-culture .culture, #japanese-culture .lifestyle {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px;
+}
+
+/* Carousel Styling */
+.carousel-item {
+    text-align: center;
+}
+.carousel .card {
+    margin: auto;
+    padding: 20px 0px 20px 20px;
+}
+.card-img-top1 {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin: 0 auto; /* Center the image */
+}
+.card-img-left1 {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Contact Form Section */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form .btn {
+    background-color: #ff5722;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+#contact-form .btn:hover {
+    background-color: #e64a19;
+}
+
+/* FAQ Section */
+#faq .card {
+    border: none;
+}
+#faq .card-header {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#faq .card-header:hover {
+    background-color: #e64a19;
+}
+#faq .card-body {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 20px;
+}
+
+/* Social Media Section */
+#social-media .btn {
+    border: 2px solid #ff5722;
+    color: #ff5722;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#social-media .btn:hover {
+    background-color: #ff5722;
+    color: white;
+}
+
+/* Support Services Section */
+#support-services {
+    text-align: center;
+    margin-top: 30px;
+}
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cultural Awareness in Japan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="img/Cultural Awareness logo1.png" alt="Logo" height="50"> Cultural Awareness</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="font-size: small;">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Japan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="culture.html">Culture & Lifestyle</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="festivals.html">Festivals & Traditions</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cuisine.html">Cuisine & Etiquette</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rules.html">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Our Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 style="color: #ff5722; text-align: center;"><b>Contact Us (お問い合わせ)</b></h1>
+        
+        <!-- Contact Form -->
+        <section id="contact-form" class="mt-5">
+            <h5 style="color: #ff5722; text-align: center;"><b>Contact Form (お問い合わせフォーム)</b></h5>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name (名前):</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (メール):</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (メッセージ):</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: #ff5722;">Submit</button>
+            </form>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="mt-5">
+            <h4 style="color: #ff5722; text-align: center;"><b>FAQ (よくある質問)</b></h4>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faqHeading1">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1" style="color: white;">
+                                What support services are available for international students? (留学生にはどのようなサポートサービスがありますか？)
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Our university offers a range of support services including language assistance, counseling, and career guidance. (私たちの大学では、語学アシスタンス、カウンセリング、キャリアガイダンスなど、さまざまなサポートサービスを提供しています。)
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeading2">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2" style="color: white;">
+                                How can I apply for a student visa? (学生ビザはどのように申請しますか？)
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            You can apply for a student visa through the Japanese embassy or consulate in your home country. (学生ビザは、母国の日本大使館または領事館で申請できます。)
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </section>
+
+        <!-- Social Media Links -->
+        <section id="social-media" class="mt-5">
+            <h4 style="color: #ff5722; text-align: center;"><b>Connect with Us (私たちとつながる)</b></h4>
+            <div class="text-center">
+                <a href="https://facebook.com" target="_blank" class="btn btn-outline-primary m-2">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="btn btn-outline-info m-2">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="btn btn-outline-danger m-2">Instagram</a>
+                <!-- Add more social media links as needed -->
+            </div>
+        </section>
+
+        <!-- Support Services Information
+        <section id="support-services" class="mt-5">
+            <h2 style="color: #ff5722; text-align: center;">Support Services (サポートサービス)</h2>
+            <p style="text-align: center;">
+                We offer a variety of support services to help international students adjust to life in Japan, including language classes, cultural orientation programs, and peer mentoring. (日本での生活に適応するために、語学クラス、文化オリエンテーションプログラム、ピアメンタリングなど、さまざまなサポートサービスを提供しています。)
+            </p>
+        </section> -->
+    </div>
+    
+    <!-- Include Footer -->
+    <footer class="text-center mt-4">
+        <p><b>&copy; 2024 Cultural Awareness. All rights reserved.</b></p>
+    </footer>
+    
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
